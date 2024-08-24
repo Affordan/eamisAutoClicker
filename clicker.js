@@ -33,7 +33,7 @@ async function mainFunction(courseId) {
     let getData;
     $.ajax({
       type: 'POST',
-      url: `http://eamis.nankai.edu.cn/eams/stdElectCourse!batchOperator.action?profileId=${profileId}`,
+      url: `https://eamis.nankai.edu.cn/eams/stdElectCourse!batchOperator.action?profileId=${profileId}`,
       data: `optype=true&operator0=${shortId}%3Atrue%3A0&lesson0=${shortId}&expLessonGroup_${shortId}=${groupId}`,
       async: false,
       dataType: 'json',
